@@ -16,6 +16,10 @@ public class MenuActivity extends AppCompatActivity {
     TextView txtTeaQt;
     int teaQt = 0;
 
+    Button btnSnackPlus, btnSnacksMinus;
+    TextView txtSnacksQt;
+    int snacksQt = 0;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,6 +29,32 @@ public class MenuActivity extends AppCompatActivity {
         btnTeaPlus = findViewById(R.id.btn_tea_plus);
         btnTeaMinus = findViewById(R.id.btn_tea_minus);
         txtTeaQt = findViewById(R.id.txt_tea_qt);
+
+        btnSnackPlus = findViewById(R.id.btn_snacks_plus);
+        btnSnacksMinus = findViewById(R.id.btn_snacks_minus);
+        txtSnacksQt = findViewById(R.id.txt_snacks_qt);
+
+        btnSnackPlus.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                snacksQt++;
+                txtSnacksQt.setText("" + snacksQt);
+            }
+        });
+
+        btnSnacksMinus.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (snacksQt == 0){
+                    Toast.makeText(MenuActivity.this,
+                            "Quantity of snacks can't be less than 0",
+                            Toast.LENGTH_SHORT).show();
+                }else{
+                    snacksQt--;
+                    txtSnacksQt.setText("" + snacksQt);
+                }
+            }
+        });
 
         btnTeaPlus.setOnClickListener(new View.OnClickListener() {
             @Override
