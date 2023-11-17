@@ -4,191 +4,208 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MenuActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context=".MenuActivity">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
         android:text="MENU"
-        android:textSize="40sp"
-        android:textStyle="bold"
         android:textAlignment="center"
-        android:layout_marginTop="25dp"/>
+        android:textSize="40sp"
+        android:textStyle="bold" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="5dp"
-        android:layout_marginRight="5dp"
-        android:weightSum="5"
         android:layout_marginTop="50dp"
-        android:orientation="horizontal">
+        android:layout_marginRight="5dp"
+        android:orientation="horizontal"
+        android:weightSum="5">
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
             android:text="ITEM"
-            android:layout_weight="1"
-            android:textStyle="bold"
             android:textSize="32sp"
-            android:gravity="center"/>
+            android:textStyle="bold" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Qt"
             android:layout_weight="3"
+            android:gravity="center"
+            android:text="Qt"
             android:textSize="32sp"
-            android:textStyle="bold"
-            android:gravity="center"/>
+            android:textStyle="bold" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="\@ Price"
             android:layout_weight="1"
+            android:gravity="center"
+            android:text="\@ Price"
             android:textSize="32sp"
-            android:textStyle="bold"
-            android:gravity="center"/>
+            android:textStyle="bold" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="5dp"
-        android:layout_marginRight="5dp"
-        android:weightSum="5"
         android:layout_marginTop="50dp"
-        android:orientation="horizontal">
+        android:layout_marginRight="5dp"
+        android:orientation="horizontal"
+        android:weightSum="5">
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
             android:text="Tea"
             android:textSize="24sp"
-            android:textStyle="bold"
-            android:layout_weight="1"
-            android:gravity="center"/>
+            android:textStyle="bold" />
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="3"
             android:weightSum="3">
+
             <Button
                 android:id="@+id/btn_tea_minus"
                 android:layout_width="25dp"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:text="-"
-                android:textSize="24sp"
-                android:layout_weight="1"/>
+                android:textSize="24sp" />
+
             <TextView
                 android:id="@+id/txt_tea_qt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="0"
-                android:textSize="24sp"
                 android:layout_weight="1"
-                android:gravity="center"/>
+                android:gravity="center"
+                android:text="0"
+                android:textSize="24sp" />
+
             <Button
                 android:id="@+id/btn_tea_plus"
                 android:layout_width="25dp"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:text="+"
-                android:textSize="24sp"
-                android:layout_weight="1"/>
+                android:textSize="24sp" />
         </LinearLayout>
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:text="Sh. 250"
-            android:textSize="24sp"
             android:layout_weight="1"
-            android:gravity="center"/>
+            android:gravity="center"
+            android:text="Sh. 250"
+            android:textSize="24sp" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="5dp"
-        android:layout_marginRight="5dp"
-        android:weightSum="5"
         android:layout_marginTop="50dp"
-        android:orientation="horizontal">
+        android:layout_marginRight="5dp"
+        android:orientation="horizontal"
+        android:weightSum="5">
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
             android:text="Snacks"
             android:textSize="24sp"
-            android:textStyle="bold"
-            android:layout_weight="1"
-            android:gravity="center"/>
+            android:textStyle="bold" />
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="3"
             android:weightSum="3">
+
             <Button
                 android:id="@+id/btn_snacks_minus"
                 android:layout_width="25dp"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:text="-"
-                android:textSize="24sp"
-                android:layout_weight="1"/>
+                android:textSize="24sp" />
+
             <TextView
                 android:id="@+id/txt_snacks_qt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="0"
-                android:textSize="24sp"
                 android:layout_weight="1"
-                android:gravity="center"/>
+                android:gravity="center"
+                android:text="0"
+                android:textSize="24sp" />
+
             <Button
                 android:id="@+id/btn_snacks_plus"
                 android:layout_width="25dp"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:text="+"
-                android:textSize="24sp"
-                android:layout_weight="1"/>
+                android:textSize="24sp" />
         </LinearLayout>
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:text="Sh. 300"
-            android:textSize="24sp"
             android:layout_weight="1"
-            android:gravity="center"/>
+            android:gravity="center"
+            android:text="Sh. 300"
+            android:textSize="24sp" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
+        android:layout_marginLeft="5dp"
         android:layout_marginTop="75dp"
         android:layout_marginRight="5dp"
-        android:layout_marginLeft="5dp"
+        android:orientation="horizontal"
         android:weightSum="2">
+
         <Button
             android:id="@+id/btn_total_price"
             android:layout_width="32dp"
             android:layout_height="wrap_content"
-            android:text="Total Price"
-            android:textSize="24sp"
             android:layout_weight="1"
-            android:gravity="center"/>
+            android:gravity="center"
+            android:text="Total Price"
+            android:textSize="24sp" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:text="Ksh. 0"
-            android:textSize="24sp"
             android:layout_weight="1"
             android:gravity="center"
-            android:textStyle="bold"/>
+            android:text="Ksh. 0"
+            android:textSize="24sp"
+            android:textStyle="bold" />
     </LinearLayout>
 
     <Button
         android:id="@+id/btn_order_summary"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Order Summary"
-        android:textSize="24sp"
+        android:layout_gravity="center"
         android:layout_marginTop="50dp"
-        android:layout_gravity="center"/>
+        android:text="Order Summary"
+        android:textSize="24sp" />
 
 </LinearLayout>
